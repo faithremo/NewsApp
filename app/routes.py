@@ -4,15 +4,10 @@ from flask import render_template    # Add this line
 
 from .utils import get_latest_news 
 
-
-
-
 @app.route('/')
 def say_hello():
-    user = {"name": "Faith"}
+    user = {"name": "New User"}
     return render_template("index.html", user=user)    # Modify this line
-
-
 
 
 @app.route('/news')
