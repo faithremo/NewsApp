@@ -1,0 +1,12 @@
+NEWS_API_KEY=''
+
+class Config(object):
+    SECRET_KEY = 'guess-me'
+    DEBUG = False
+    TESTING = False
+    CSRF_ENABLED = True
+    
+class ProductionConfig(Config):
+    DEBUG = False
+    MAIL_DEBUG = False
+    
