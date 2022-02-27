@@ -1,6 +1,7 @@
 from flask import app
 from flask import render_template    # Add this line
 from flask import Flask
+from .utils import get_latest_news 
 
 app = Flask (__name__)
 
@@ -12,6 +13,12 @@ def say_hello():
 app.run(
     debug = True
 )
+
+@app.route('/news')
+def news_headlines():
+    news_articles = get_latest_news()
+    return render_template("news.html", news_articles=news_articles)
+
 
 
 
