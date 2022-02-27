@@ -1,18 +1,19 @@
-from flask import app
+from app import app
 from flask import render_template    # Add this line
-from flask import Flask
+
+
 from .utils import get_latest_news 
 
-app = Flask (__name__)
+
+
 
 @app.route('/')
 def say_hello():
     user = {"name": "Faith"}
     return render_template("index.html", user=user)    # Modify this line
 
-app.run(
-    debug = True
-)
+
+
 
 @app.route('/news')
 def news_headlines():
