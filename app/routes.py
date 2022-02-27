@@ -1,5 +1,5 @@
 from app import app
-from flask import render_template    # Add this line
+from flask import render_template    
 
 
 from .utils import get_latest_news 
@@ -7,7 +7,8 @@ from .utils import get_latest_news
 @app.route('/')
 def say_hello():
     user = {"name": "New User"}
-    return render_template("index.html", user=user)    # Modify this line
+    return render_template("index.html", user=user)    
+
 
 
 @app.route('/news')
