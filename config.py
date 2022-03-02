@@ -1,7 +1,7 @@
 NEWS_API_KEY='deaf8ab923104a8dbcecd36143d0a2cf'
 
 class Config(object):
-    SECRET_KEY = 'guess-me'
+    SECRET_KEY = 'faith'
     DEBUG = False
     TESTING = False
     CSRF_ENABLED = True
