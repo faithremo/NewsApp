@@ -1,4 +1,4 @@
-NEWS_API_KEY='deaf8ab923104a8dbcecd36143d0a2cf'
+#NEWS_API_KEY='deaf8ab923104a8dbcecd36143d0a2cf'
 
 class Config(object):
     SECRET_KEY = 'faith'
